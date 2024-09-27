@@ -142,3 +142,42 @@
     filter: blur(10px);
     animation: efeito2 1.8s infinite alternate;
   }
+  /*Mobile*/
+/*resoonsividade mobile*/
+@media (width <= 500px){
+
+    body{
+      width: 100%;
+  
+    }
+    header{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    header nav ul{
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .btn
+    {
+        margin-top: 15%;
+        margin-left: 25%;
+    }
+    .home{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .right img{
+      width: 100%
+    }
+  nav
+  {
+    flex-direction: column;
+  }
+  }
