@@ -1,3 +1,20 @@
+@keyframes efeito1 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(15px);
+    }
+  }
+  @keyframes efeito2 {
+    0% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(0.85, 0.85);
+    }
+  }
+
 :root {
     --text-color: #000;
     --text-color2: #fff;
@@ -108,3 +125,20 @@
     box-shadow: 0 9px 6px var(--second-color);
   }
   
+  .right img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    animation: efeito1 1.8s infinite alternate;
+  }
+  
+  .shadow {
+    width: 450px;
+    height: 45px;
+    background: var(--text-color);
+    border-radius: 50%;
+    margin: 0 auto;
+    filter: blur(10px);
+    animation: efeito2 1.8s infinite alternate;
+  }
